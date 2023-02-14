@@ -1,0 +1,43 @@
+.ishop {
+  width: 55rem;
+}
+
+.ishop .iShopName {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.ishop .table {
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  background-color: #F0F0F0;
+}
+
+.ishop td, th {
+  border: 1px solid black;;
+}
+
+.ishop .nameItem {
+  padding: 0.5rem;
+  width: 18rem;
+}
+
+.ishop .picture {
+  max-width: 100%;
+}
+
+.ishop .images {
+  margin: 1rem;
+  max-width: calc(100% - 2rem);
+}
+
+.ishop .price {
+  width: 10rem;
+  text-align: center;
+}
+
+.ishop .residue {
+  width: 5rem;
+  text-align: center;
+}
