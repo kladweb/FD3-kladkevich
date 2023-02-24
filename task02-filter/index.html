@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>filter</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+
+    <script src="filter.js"></script>
+
+    <script>
+
+      // var shopName = 'Магазин подержанных товаров';
+      var itemsArr = ['california',
+        'everything',
+        'aboveboard',
+        'washington',
+        'basketball',
+        'weathering',
+        'characters',
+        'literature',
+        'contraband',
+        'appreciate'];
+
+      ReactDOM.render(
+        React.createElement(filter, {items: itemsArr}),
+        document.getElementById('container')
+      );
+
+    </script>
+
+  </body>
+</html>

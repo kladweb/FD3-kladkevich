@@ -1,0 +1,23 @@
+.filter {
+  font-size: 1.5rem;
+}
+
+.form {
+  margin-top: 2rem;
+  transform: scale(1.2) translateX(10%);
+}
+
+.items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.listItems {
+  display: block;
+  margin: 1rem;
+  width: 20rem;
+  height: 10rem;
+  overflow-y: scroll;
+  border: solid 1px;
+}
