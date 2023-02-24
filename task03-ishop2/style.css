@@ -1,0 +1,63 @@
+.ishop {
+  width: 50rem;
+}
+
+.ishop .iShopName {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.ishop .table {
+  width: 100%;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  background-color: #F0F0F0;
+  border-collapse: collapse;
+}
+
+.ishop td, th {
+  border: 1px solid black;;
+}
+
+.ishop .nameItem {
+  padding: 0.5rem;
+  width: 18rem;
+}
+
+.ishop .picture {
+  max-width: 100%;
+}
+
+.ishop .images {
+  margin: 0.5rem;
+  width: calc(100% - 1rem);
+  height: 4rem;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.ishop .price {
+  width: 8rem;
+  text-align: center;
+}
+
+.ishop .residue {
+  width: 5rem;
+  text-align: center;
+}
+
+.ishop .buttonDel {
+  width: 80%;
+  height: 3rem;
+  z-index: 5;
+}
+
+.ishop .control {
+  width: 8rem;
+  text-align: center;
+}
+
+.ishop .select {
+  background-color: lightcoral;
+}
