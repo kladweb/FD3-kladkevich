@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Персональный компьютер БАЙТ",
+    "code": 1,
+    "price": 19.99,
+    "url": "https://i.ytimg.com/vi/Spp8Lv24Y3M/maxresdefault.jpg",
+    "residue": 2
+  },
+  {
+    "name": "Компьютер ЕС1841",
+    "code": 2,
+    "price": 35.99,
+    "url": "https://profit.kz/Content/Images/PCmuzeum06ES1841.JPG",
+    "residue": 1
+  },
+  {
+    "name": "Фотоаппарат CANON",
+    "code": 3,
+    "price": 59.99,
+    "url": "https://www.maxpixel.net/static/photo/1x/Digital-Slr-Camera-Digital-Camera-Dslr-7379608.jpg",
+    "residue": 4
+  },
+  {
+    "name": "Мобильный телефон",
+    "code": 4,
+    "price": 23.99,
+    "url": "https://www.maxpixel.net/static/photo/1x/Philips-Xenium-Cell-Connection-Mobile-Phone-Button-7173845.jpg",
+    "residue": 7
+  },
+  {
+    "name": "Трактор пневмоколесный",
+    "code": 5,
+    "price": 1499.99,
+    "url": "https://www.maxpixel.net/static/photo/1x/Agriculture-Tractor-Field-Harvest-7326071.jpg",
+    "residue": 1
+  }
+]

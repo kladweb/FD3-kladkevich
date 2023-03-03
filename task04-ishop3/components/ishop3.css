@@ -1,0 +1,30 @@
+.ishop {
+  width: 50rem;
+}
+
+.iShopName {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  background-color: #F0F0F0;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid black;;
+}
+
+.fill-field {
+  color: lightcoral;
+}
+
+input {
+  margin: 0.1rem;
+}
+
