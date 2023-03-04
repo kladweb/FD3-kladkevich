@@ -15,6 +15,10 @@ class Ishop extends React.Component {
     selectedProductCode: null,
     items: this.props.defaultItems,
     activeItem: null,
+    //workMode: 1 - первоначальное состояние с возможностью выбора товара, редактирования, удаления
+    // 2 - режим редактирования товара до начала какого-либо изменения в форме
+    // 3 - режим редактирования с изменением какой-либо строки или строк
+    // 4 - режим добавления и ввода данных для нового товара
     workMode: 1,
     changeName: null,
     changePrice: null,
@@ -26,13 +30,14 @@ class Ishop extends React.Component {
     if (code) {
       this.state.items.forEach(item => {
         if (item.code === code) {
+          let numberItem = this.state.items.indexOf(item);
           this.setState({
             selectedProductCode: code,
             activeItem: item,
-            changeName: this.state.items[this.state.items.indexOf(item)].name,
-            changePrice: this.state.items[this.state.items.indexOf(item)].price,
-            changeUrl: this.state.items[this.state.items.indexOf(item)].url,
-            changeQuantity: this.state.items[this.state.items.indexOf(item)].residue
+            changeName: this.state.items[numberItem].name,
+            changePrice: this.state.items[numberItem].price,
+            changeUrl: this.state.items[numberItem].url,
+            changeQuantity: this.state.items[numberItem].residue
           });
         }
       });

@@ -30587,6 +30587,10 @@ var Ishop = function (_React$Component) {
       selectedProductCode: null,
       items: _this.props.defaultItems,
       activeItem: null,
+      //workMode: 1 - первоначальное состояние с возможностью выбора товара, редактирования, удаления
+      // 2 - режим редактирования товара до начала какого-либо изменения в форме
+      // 3 - режим редактирования с изменением какой-либо строки или строк
+      // 4 - режим добавления и ввода данных для нового товара
       workMode: 1,
       changeName: null,
       changePrice: null,
@@ -30596,13 +30600,14 @@ var Ishop = function (_React$Component) {
       if (code) {
         _this.state.items.forEach(function (item) {
           if (item.code === code) {
+            var numberItem = _this.state.items.indexOf(item);
             _this.setState({
               selectedProductCode: code,
               activeItem: item,
-              changeName: _this.state.items[_this.state.items.indexOf(item)].name,
-              changePrice: _this.state.items[_this.state.items.indexOf(item)].price,
-              changeUrl: _this.state.items[_this.state.items.indexOf(item)].url,
-              changeQuantity: _this.state.items[_this.state.items.indexOf(item)].residue
+              changeName: _this.state.items[numberItem].name,
+              changePrice: _this.state.items[numberItem].price,
+              changeUrl: _this.state.items[numberItem].url,
+              changeQuantity: _this.state.items[numberItem].residue
             });
           }
         });
@@ -30610,9 +30615,6 @@ var Ishop = function (_React$Component) {
         _this.setState({ selectedProductCode: code });
       }
     }, _this.itemDeleted = function (code) {
-      // if (code === this.state.selectedProductCode) {
-      //   this.setState({selectedProductCode: null, activeItem: null});
-      // }
       _this.setState({
         items: _this.state.items.filter(function (prod) {
           return prod.code !== code;
