@@ -446,7 +446,7 @@ var colors = ['red', 'orange', 'yellow', 'green', '#00BFFF', 'blue', 'purple'];
 
 _reactDom2.default.render(_react2.default.createElement(
   _RainbowFrame2.default,
-  { className: 'text', colors: colors },
+  { colors: colors },
   'Hello!'
 ), document.getElementById('container'));
 
