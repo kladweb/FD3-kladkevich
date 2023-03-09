@@ -6,7 +6,7 @@ import RainbowFrame from './components/RainbowFrame';
 let colors = ['red', 'orange', 'yellow', 'green', '#00BFFF', 'blue', 'purple'];
 
 ReactDOM.render(
-  <RainbowFrame className='text' colors={colors}>
+  <RainbowFrame colors={colors}>
     Hello!
   </RainbowFrame>
   , document.getElementById('container')
