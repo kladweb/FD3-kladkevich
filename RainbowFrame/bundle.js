@@ -30551,20 +30551,20 @@ var RainbowFrame = function (_React$Component) {
   _createClass(RainbowFrame, [{
     key: 'render',
     value: function render() {
-      var divs = _react2.default.createElement(
-        'div',
-        { className: 'frame', style: { border: "solid 10px " + this.props.colors[0], padding: "10px" } },
-        _react2.default.createElement(
-          'span',
-          { className: 'text' },
-          this.props.children
-        )
-      );
-      for (var i = 1; i < this.props.colors.length; i++) {
+      var divs = void 0;
+      for (var i = 0; i < this.props.colors.length; i++) {
         divs = _react2.default.createElement(
           'div',
           { className: 'frame', style: { border: "solid 10px " + this.props.colors[i], padding: "10px" } },
-          divs
+          i === 0 ? _react2.default.createElement(
+            'span',
+            { className: 'text' },
+            this.props.children
+          ) : _react2.default.createElement(
+            _react.Fragment,
+            null,
+            divs
+          )
         );
       }
 
